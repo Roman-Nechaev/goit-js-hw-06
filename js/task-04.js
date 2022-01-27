@@ -21,16 +21,16 @@ const counter = {
 const UseDecrementBtn = document.querySelector('[data-action="decrement"]');
 const UseIncrementBtn = document.querySelector('[data-action="increment"]');
 
-UseDecrementBtn.addEventListener('click', onDecrementBtn);
-UseIncrementBtn.addEventListener('click', onIncrementBtn);
+UseDecrementBtn.addEventListener('click', onBtnDecrementClick);
+UseIncrementBtn.addEventListener('click', onBtnIncrementClick);
 
-function onDecrementBtn() {
+function onBtnDecrementClick() {
     counter.decrement();
 
     counterValueEl.textContent = counter.value;
 }
 
-function onIncrementBtn() {
+function onBtnIncrementClick() {
     counter.increment();
 
     counterValueEl.textContent = counter.value;
