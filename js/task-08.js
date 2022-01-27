@@ -34,10 +34,12 @@ form.addEventListener('submit', event => {
 
     if (!email) {
         alert('Поле email не заполнено');
+        form.reset();
         return;
     }
     if (!password) {
         alert('Поле password не заполнено');
+        form.reset();
         return;
     }
 
