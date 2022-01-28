@@ -12,12 +12,13 @@ function getRandomHexColor() {
 }
 
 const spanColor = document.querySelector('.color');
-
 const btnColor = document.querySelector('.change-color');
+const bodyEl = document.body;
 
-btnColor.addEventListener('click', onBtnColorClick);
+btnColor.addEventListener('click', onButtonClick);
 
-function onBtnColorClick() {
-    document.body.style.backgroundColor = `${getRandomHexColor()}`;
-    spanColor.textContent = `${document.body.style.backgroundColor}`;
+function onButtonClick() {
+    const color = getRandomHexColor();
+    spanColor.textContent = color;
+    bodyEl.style.backgroundColor = color;
 }
