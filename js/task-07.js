@@ -8,7 +8,7 @@ const inputEl = document.querySelector('#font-size-control');
 
 const textEl = document.querySelector('#text');
 
-inputEl.addEventListener('mousemove', onMovelever);
+inputEl.addEventListener('input', onMovelever);
 
 function onMovelever(event) {
     textEl.style.fontSize = event.currentTarget.value + 'px';
